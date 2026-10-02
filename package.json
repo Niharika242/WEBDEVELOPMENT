@@ -8,6 +8,7 @@
     "dev:server": "tsx watch server/src/server.ts",
     "dev:all": "concurrently -k \"npm:dev\" \"npm:dev:server\"",
     "build": "tsc -b && vite build",
+    "build:pages": "tsc -b && vite build --mode github-pages",
     "build:server": "tsc -p server/tsconfig.json",
     "preview": "vite preview",
     "typecheck": "tsc -b --pretty && tsc -p server/tsconfig.json --noEmit"
