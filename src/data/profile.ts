@@ -23,7 +23,7 @@ export const profile: Profile = {
   githubUrl: 'https://github.com/ManeruNiharika',
   linkedInUrl: 'https://www.linkedin.com/in/maneru-niharika-niha2526',
   resumeUrl: '/images/my%20resume1.pdf',
-  photo: '/images/profile/profile.jpg',
+  photo: '/images/profile/Profile.jpg',
   photoAlt: 'Professional portrait of Maneru Niharika',
   introduction:
     'I build scalable software across the stack — from backend services and real-time systems to high-performance interfaces, APIs, automation, and applied AI.',

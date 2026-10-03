@@ -10,12 +10,13 @@ interface ProfileImageProps {
 export default function ProfileImage({ src, alt, name, className = '' }: ProfileImageProps) {
   const [hasImage, setHasImage] = useState(true);
   const initials = name.split(/\s+/).map((part) => part.charAt(0)).join('').slice(0, 2);
+  const imageSrc = `${import.meta.env.BASE_URL}${src.replace(/^\/+/, '')}`;
 
   return (
     <figure className={`profile-image ${className}`}>
       {hasImage ? (
         <img
-          src={src}
+          src={imageSrc}
           alt={alt}
           width={540}
           height={720}
